@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <!-- SEO Meta Tags -->
+  <title>Software Engineer | Portfolio</title>
+  <meta name="description" content="Portfolio of a Software Engineer showcasing projects, technical skills, and experience." />
+  <meta name="author" content="Software Engineer" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Software Engineer | Portfolio" />
+  <meta property="og:description" content="Explore projects, skills, and professional experience." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Retro Pixel Art Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Mobile Topbar Header (Visible on smaller screens) -->
+  <header id="mobile-header" class="mobile-topbar" aria-label="Mobile Navigation Bar">
+    <div class="mobile-logo">
+      <a href="#hero" aria-label="Home">&lt;Dev /&gt;</a>
+    </div>
+    <div class="mobile-actions">
+      <button 
+        id="mobile-theme-toggle" 
+        class="theme-toggle-btn mobile-theme-btn" 
+        type="button" 
+        aria-label="Toggle dark mode"
+        title="Toggle Night / Light Mode"
+      >
+        <span class="mobile-theme-icon" aria-hidden="true">🌙</span>
+      </button>
+      <button 
+        id="mobile-menu-toggle" 
+        class="mobile-menu-btn pixel-btn" 
+        type="button" 
+        aria-expanded="false" 
+        aria-controls="sidebar-nav"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="menu-icon-bars" aria-hidden="true">☰</span>
+        <span class="menu-btn-label">MENU</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Sidebar Overlay for Mobile -->
+  <div id="sidebar-overlay" class="sidebar-overlay" aria-hidden="true"></div>
+
+  <!-- ========================================================= -->
+  <!-- VERTICAL NAVIGATION BAR (LEFT SIDE OF SCREEN)             -->
+  <!-- ========================================================= -->
+  <aside id="sidebar-nav" class="pixel-sidebar" aria-label="Primary Navigation">
+    
+    <!-- Sidebar Brand & Player Info -->
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <a href="#hero" class="logo-link" aria-label="Home">
+          <span class="logo-glitch">&lt;DEV&gt;</span>
+          <span class="logo-sub">SRINIVAS</span>
+        </a>
+      </div>
+      <div class="player-status-badge">
+        <span class="pulse-pixel-dot" aria-hidden="true"></span>
+        <span>PLAYER 1: ACTIVE</span>
+      </div>
+      <!-- Close button on Mobile Drawer -->
+      <button 
+        id="sidebar-close-btn" 
+        class="sidebar-close-btn" 
+        type="button" 
+        aria-label="Close navigation menu"
+      >
+        [✖ CLOSE]
+      </button>
+    </div>
+
+    <!-- Navigation Menu Items -->
+    <nav class="sidebar-nav-container" aria-label="Sidebar Menu">
+      <div class="menu-category-label">// MAIN QUEST //</div>
+      <ul class="sidebar-menu" role="menu">
+        <li role="none">
+          <a href="#hero" class="sidebar-link active" role="menuitem" data-section="hero">
+            <span class="link-pixel-icon" aria-hidden="true">🏠</span>
+            <span class="link-text">Home</span>
+          </a>
+        </li>
+        <li role="none">
+          <a href="#about" class="sidebar-link" role="menuitem" data-section="about">
+            <span class="link-pixel-icon" aria-hidden="true">👾</span>
+            <span class="link-text">About Me</span>
+          </a>
+        </li>
+        <li role="none">
+          <a href="#skills" class="sidebar-link" role="menuitem" data-section="skills">
+            <span class="link-pixel-icon" aria-hidden="true">⚡</span>
+            <span class="link-text">Skills</span>
+          </a>
+        </li>
+        <li role="none">
+          <a href="#timeline" class="sidebar-link" role="menuitem" data-section="timeline">
+            <span class="link-pixel-icon" aria-hidden="true">⏳</span>
+            <span class="link-text">Timeline</span>
+          </a>
+        </li>
+        <li role="none">
+          <a href="#projects" class="sidebar-link" role="menuitem" data-section="projects">
+            <span class="link-pixel-icon" aria-hidden="true">🕹️</span>
+            <span class="link-text">Projects</span>
+          </a>
+        </li>
+        <li role="none">
+          <a href="#testimonials" class="sidebar-link" role="menuitem" data-section="testimonials">
+            <span class="link-pixel-icon" aria-hidden="true">⭐</span>
+            <span class="link-text">Testimonials</span>
+          </a>
+        </li>
+        <li role="none">
+          <a href="#chat" class="sidebar-link" role="menuitem" data-section="chat">
+            <span class="link-pixel-icon" aria-hidden="true">💬</span>
+            <span class="link-text">Chat</span>
+          </a>
+        </li>
+        <li role="none">
+          <a href="#contact" class="sidebar-link" role="menuitem" data-section="contact">
+            <span class="link-pixel-icon" aria-hidden="true">✉️</span>
+            <span class="link-text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Sidebar Footer & Night Mode Toggle -->
+    <div class="sidebar-footer">
+      <div class="sidebar-theme-wrapper">
+        <button 
+          id="theme-toggle" 
+          class="theme-toggle-btn sidebar-theme-btn" 
+          type="button" 
+          aria-label="Toggle dark mode"
+          title="Toggle Night / Light Mode"
+        >
+          <span id="theme-icon" class="theme-icon" aria-hidden="true">🌙</span>
+          <span id="theme-text" class="theme-label-text">DARK MODE</span>
+        </button>
+      </div>
+      <div class="sidebar-system-info">
+        <span>VER 1.0.0</span>
+        <span>•</span>
+        <span>60 FPS</span>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ========================================================= -->
+  <!-- MAIN CONTENT WRAPPER (Offsets content for left sidebar)   -->
+  <!-- ========================================================= -->
+  <div class="main-wrapper">
+
+  <!-- ========================================================= -->
+  <!-- MAIN CONTENT CONTAINER                                    -->
+  <!-- ========================================================= -->
+  <main id="main-content">
+
+    <!-- ======================================================= -->
+    <!-- 1. HERO SECTION (Pixel Art Style)                       -->
+    <!-- ======================================================= -->
+    <section id="hero" class="hero-section" aria-label="Hero Section">
+      <div class="hero-container">
+        
+        <!-- Left Column: Hero Character Stats & Welcome Info -->
+        <div class="hero-card">
+          <!-- Retro HUD Header -->
+          <div class="hero-hud">
+            <span class="hud-badge">LEVEL 99 DEV</span>
+            <div class="hud-status">
+              <span class="status-dot"></span>
+              <span>READY FOR CO-OP</span>
+            </div>
+          </div>
+
+          <!-- Greeting & Welcome Title -->
+          <p class="hero-greeting">&gt; HELLO WORLD, WELCOME TO LEVEL 1</p>
+          <h1 class="hero-title">
+            I'M <span class="hero-name-highlight">SRINIVAS D N</span>
+          </h1>
+
+          <!-- Brief Tagline with Blinking Pixel Cursor -->
+          <p class="hero-tagline">
+            Software Engineer forging scalable web systems &amp; high-performance architectures with pixel-perfect precision.<span class="pixel-cursor">_</span>
+          </p>
+
+          <!-- Retro HP / Skill Stat Bar -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span>HP / ENERGY</span>
+              <div class="stat-bar-container">
+                <div class="stat-bar-fill"></div>
+              </div>
+              <span>100/100</span>
+            </div>
+          </div>
+
+          <!-- Pixel Call to Action Buttons -->
+          <div class="hero-cta">
+            <a href="#projects" class="pixel-btn pixel-btn-primary">
+              <span>⚔️</span> START QUEST
+            </a>
+            <a href="Srinivas D N_resume.pdf" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-secondary">
+              <span>📜</span> RESUME
+            </a>
+            <a href="#contact" class="pixel-btn pixel-btn-secondary">
+              <span>💬</span> CONTACT
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Pixel Character Frame -->
+        <div class="hero-visual">
+          <div class="pixel-frame">
+            <div class="frame-header">
+              <span>SRINIVAS.CHR</span>
+              <span>[PLAYER 1]</span>
+            </div>
+            <div class="avatar-image-wrapper">
+              <img 
+                src="profile pic.jpeg" 
+                alt="Portrait of Srinivas D N" 
+                class="hero-avatar-img"
+                loading="eager"
+              />
+            </div>
+            <div class="character-card-caption">
+              CLASS: SOFTWARE ENGINEER
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 2. ABOUT ME SECTION                                     -->
+    <!-- ======================================================= -->
+    <section id="about" class="about-section" aria-label="About Me">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">// CHARACTER PROFILE //</span>
+          <h2 class="section-heading">About Me</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Left Column: Pixel Art Avatar & Character Specs -->
+          <div class="about-avatar-column">
+            <div class="pixel-avatar-card">
+              <div class="avatar-card-topbar">
+                <span class="avatar-badge">ID: SRINIVAS_DN</span>
+                <span class="avatar-indicator">● LVL 1</span>
+              </div>
+              <div class="pixel-avatar-frame">
+                <img 
+                  src="pixel-avatar.jpg" 
+                  alt="Pixel art portrait of Srinivas D N" 
+                  class="pixel-art-avatar-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="avatar-specs-list">
+                <div class="spec-row">
+                  <span class="spec-label">ROLE:</span>
+                  <span class="spec-value">Software Engineer</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">BRANCH:</span>
+                  <span class="spec-value">CS &amp; Data Science</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">COLLEGE:</span>
+                  <span class="spec-value">A.I.T. Karnataka</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">STATUS:</span>
+                  <span class="spec-value highlight-green">Available for Projects</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Bio, Highlights & Interests -->
+          <div class="about-content-column">
+            
+            <!-- Bio Overview Box -->
+            <div class="about-card bio-box">
+              <h3 class="about-subheading">
+                <span class="subheading-icon">👾</span> BIO OVERVIEW
+              </h3>
+              <p class="about-text">
+                Hello! I'm <strong>Srinivas D N</strong>, a software engineer pursuing my 
+                Bachelor of Engineering in <strong>Computer Science and Data Science Engineering</strong> at A.I.T. College.
+              </p>
+              <p class="about-text">
+                I enjoy engineering high-performance, robust digital systems and translating complex algorithmic concepts into clean, functional code. With a solid foundation in object-oriented programming, data structures, and sustainable automation, I aim to craft software that is both elegant and impactful.
+              </p>
+            </div>
+
+            <!-- Career Highlights & Personal Interests Sub-grid -->
+            <div class="about-highlights-grid">
+              
+              <!-- Career Highlights Card -->
+              <div class="about-card highlight-card">
+                <h3 class="about-subheading">
+                  <span class="subheading-icon">🏆</span> CAREER HIGHLIGHTS
+                </h3>
+                <ul class="highlight-list">
+                  <li class="highlight-item">
+                    <span class="bullet-arrow">►</span>
+                    <div>
+                      <strong>Solar-Powered Irrigation:</strong>
+                      <p>Engineered an automated solar drip irrigation system optimizing water distribution and renewable power usage.</p>
+                    </div>
+                  </li>
+                  <li class="highlight-item">
+                    <span class="bullet-arrow">►</span>
+                    <div>
+                      <strong>Core Problem Solving:</strong>
+                      <p>Deep expertise in Java, Python, and C, with emphasis on efficient data structures and OOP principles.</p>
+                    </div>
+                  </li>
+                  <li class="highlight-item">
+                    <span class="bullet-arrow">►</span>
+                    <div>
+                      <strong>System Engineering:</strong>
+                      <p>Developing responsive web interfaces with accessible semantic structure and scalable software architecture.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Personal Interests Card -->
+              <div class="about-card interests-card">
+                <h3 class="about-subheading">
+                  <span class="subheading-icon">🕹️</span> PERSONAL INTERESTS
+                </h3>
+                <ul class="interests-tags">
+                  <li class="interest-tag"><span>📊</span> Data Science &amp; AI</li>
+                  <li class="interest-tag"><span>🌱</span> Clean Energy Tech</li>
+                  <li class="interest-tag"><span>👾</span> Retro Games &amp; Pixel Art</li>
+                  <li class="interest-tag"><span>🧩</span> Algorithmic Puzzles</li>
+                  <li class="interest-tag"><span>🌐</span> Open Source Coding</li>
+                  <li class="interest-tag"><span>🔧</span> IoT &amp; Embedded Systems</li>
+                </ul>
+                <div class="interests-quote-box">
+                  <p class="interests-quote">
+                    <em>"Turning logic into impact, one algorithm and pixel at a time."</em>
+                  </p>
+                </div>
+              </div>
+
+            </div><!-- /.about-highlights-grid -->
+
+            <!-- Quick Action Links -->
+            <div class="about-cta-row">
+              <a href="Srinivas D N_resume.pdf" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-primary">
+                <span>📄</span> RESUME PDF
+              </a>
+              <a href="#skills" class="pixel-btn pixel-btn-secondary">
+                <span>⚡</span> VIEW SKILLS
+              </a>
+              <a href="#contact" class="pixel-btn pixel-btn-secondary">
+                <span>✉️</span> GET IN TOUCH
+              </a>
+            </div>
+
+          </div><!-- /.about-content-column -->
+
+        </div><!-- /.about-grid -->
+
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 3. SKILLS SECTION (Tech Arsenal & Ability Tree)         -->
+    <!-- ======================================================= -->
+    <section id="skills" class="skills-section" aria-label="Technical Skills">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">// TECH ARSENAL &amp; ABILITY TREE //</span>
+          <h2 class="section-heading">Skills &amp; Competencies</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <!-- Filter Controls: Interactive Category Switcher -->
+        <div class="skills-filter-bar" role="tablist" aria-label="Skill categories filter">
+          <button type="button" class="pixel-filter-btn active" data-filter="all" role="tab" aria-selected="true">
+            <span class="filter-icon">★</span> ALL ARSENAL
+          </button>
+          <button type="button" class="pixel-filter-btn" data-filter="languages" role="tab" aria-selected="false">
+            <span class="filter-icon">☕</span> LANGUAGES
+          </button>
+          <button type="button" class="pixel-filter-btn" data-filter="core" role="tab" aria-selected="false">
+            <span class="filter-icon">🧠</span> CORE CS &amp; DATA
+          </button>
+          <button type="button" class="pixel-filter-btn" data-filter="web" role="tab" aria-selected="false">
+            <span class="filter-icon">🌐</span> WEB TECH
+          </button>
+          <button type="button" class="pixel-filter-btn" data-filter="tools" role="tab" aria-selected="false">
+            <span class="filter-icon">🛠️</span> TOOLS &amp; HARDWARE
+          </button>
+        </div>
+
+        <!-- Skills Main Grid -->
+        <div class="skills-categories-grid">
+
+          <!-- ===================================================== -->
+          <!-- CATEGORY 1: PROGRAMMING LANGUAGES                     -->
+          <!-- ===================================================== -->
+          <div class="skills-category-card" data-category="languages">
+            <div class="category-header">
+              <div class="category-title-wrap">
+                <span class="category-icon">☕</span>
+                <h3 class="category-title">Programming Languages</h3>
+              </div>
+              <span class="category-badge">4 ABILITIES</span>
+            </div>
+            <p class="category-desc">Core syntax and language masteries for building backend systems, algorithmic solutions, and data pipelines.</p>
+
+            <div class="skills-list">
+              <!-- Skill: Java (Enterprise OOP & backend algorithmic core) -->
+              <div class="skill-item" data-level="85">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-icon">☕</span> Java
+                  </span>
+                  <span class="skill-rating">LVL 85 <span class="rating-sub">/ 100</span></span>
+                </div>
+                <!-- 8-Bit Stepped Progress Bar -->
+                <div class="pixel-bar-track" aria-label="Java proficiency 85%">
+                  <div class="pixel-bar-fill" style="--skill-pct: 85%;"></div>
+                </div>
+                <p class="skill-notes">Object-Oriented Programming, enterprise architecture, and backend systems.</p>
+              </div>
+
+              <!-- Skill: Python (Data science, AI scripting & automation) -->
+              <div class="skill-item" data-level="88">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-icon">🐍</span> Python
+                  </span>
+                  <span class="skill-rating">LVL 88 <span class="rating-sub">/ 100</span></span>
+                </div>
+                <div class="pixel-bar-track" aria-label="Python proficiency 88%">
+                  <div class="pixel-bar-fill" style="--skill-pct: 88%;"></div>
+                </div>
+                <p class="skill-notes">Data analysis, algorithmic scripting, automation bots, and ML modeling.</p>
+              </div>
+
+              <!-- Skill: C (Foundational systems programming & memory management) -->
+              <div class="skill-item" data-level="80">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-icon">⚙️</span> C Language
+                  </span>
+                  <span class="skill-rating">LVL 80 <span class="rating-sub">/ 100</span></span>
+                </div>
+                <div class="pixel-bar-track" aria-label="C proficiency 80%">
+                  <div class="pixel-bar-fill" style="--skill-pct: 80%;"></div>
+                </div>
+                <p class="skill-notes">Low-level memory pointers, struct architectures, and computational performance.</p>
+              </div>
+
+              <!-- Skill: JavaScript (Modern ES6+, interactive web frontend) -->
+              <div class="skill-item" data-level="84">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-icon">⚡</span> JavaScript (ES6+)
+                  </span>
+                  <span class="skill-rating">LVL 84 <span class="rating-sub">/ 100</span></span>
+                </div>
+                <div class="pixel-bar-track" aria-label="JavaScript proficiency 84%">
+                  <div class="pixel-bar-fill" style="--skill-pct: 84%;"></div>
+                </div>
+                <p class="skill-notes">DOM mechanics, asynchronous events, API consumption, and dynamic interfaces.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!-- CATEGORY 2: CORE CS & DATA SCIENCE                    -->
+          <!-- ===================================================== -->
+          <div class="skills-category-card" data-category="core">
+            <div class="category-header">
+              <div class="category-title-wrap">
+                <span class="category-icon">🧠</span>
+                <h3 class="category-title">Core CS &amp; Data Science</h3>
+              </div>
+              <span class="category-badge">4 ABILITIES</span>
+            </div>
+            <p class="category-desc">Mathematical and algorithmic foundations essential for writing optimized, production-grade software.</p>
+
+            <div class="skills-list">
+              <!-- Skill: Data Structures & Algorithms (Trees, Graphs, Complexity) -->
+              <div class="skill-item" data-level="86">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-icon">🌳</span> Data Structures &amp; Algorithms
+                  </span>
+                  <span class="skill-rating">LVL 86 <span class="rating-sub">/ 100</span></span>
+                </div>
+                <div class="pixel-bar-track" aria-label="Data Structures proficiency 86%">
+                  <div class="pixel-bar-fill" style="--skill-pct: 86%;"></div>
+                </div>
+                <p class="skill-notes">Time/space complexity, sorting, graph traversal, dynamic programming.</p>
+              </div>
+
+              <!-- Skill: Object-Oriented Programming (Design patterns & modularity) -->
+              <div class="skill-item" data-level="90">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-icon">🧱</span> Object-Oriented Design (OOP)
+                  </span>
+                  <span class="skill-rating">LVL 90 <span class="rating-sub">/ 100</span></span>
+                </div>
+                <div class="pixel-bar-track" aria-label="OOP proficiency 90%">
+                  <div class="pixel-bar-fill" style="--skill-pct: 90%;"></div>
+                </div>
+                <p class="skill-notes">Encapsulation, inheritance, polymorphism, abstraction, and clean architecture.</p>
+              </div>
+
+              <!-- Skill: Data Science & Analytics (Predictive statistics & modeling) -->
+              <div class="skill-item" data-level="78">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-icon">📊</span> Data Science &amp; Modeling
+                  </span>
+                  <span class="skill-rating">LVL 78 <span class="rating-sub">/ 100</span></span>
+                </div>
+                <div class="pixel-bar-track" aria-label="Data Science proficiency 78%">
+                  <div class="pixel-bar-fill" style="--skill-pct: 78%;"></div>
+                </div>
+                <p class="skill-notes">Statistical reasoning, data preprocessing, feature engineering, and inference.</p>
+              </div>
+
+              <!-- Skill: Relational Database Concepts & SQL -->
+              <div class="skill-item" data-level="82">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-icon">🗄️</span> Database Systems &amp; SQL
+                  </span>
+                  <span class="skill-rating">LVL 82 <span class="rating-sub">/ 100</span></span>
+                </div>
+                <div class="pixel-bar-track" aria-label="Database systems proficiency 82%">
+                  <div class="pixel-bar-fill" style="--skill-pct: 82%;"></div>
+                </div>
+                <p class="skill-notes">Relational schemas, queries, joins, ACID transactions, and data normalization.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!-- CATEGORY 3: WEB TECHNOLOGIES & APIS                   -->
+          <!-- ===================================================== -->
+          <div class="skills-category-card" data-category="web">
+            <div class="category-header">
+              <div class="category-title-wrap">
+                <span class="category-icon">🌐</span>
+                <h3 class="category-title">Web Technologies</h3>
+              </div>
+              <span class="category-badge">3 ABILITIES</span>
+            </div>
+            <p class="category-desc">Crafting responsive, accessible, high-performance web applications and services.</p>
+
+            <div class="skills-list">
+              <!-- Skill: Semantic HTML5 & Web Accessibility (WCAG standards & SEO) -->
+              <div class="skill-item" data-level="92">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-icon">📄</span> Semantic HTML5 &amp; Accessibility
+                  </span>
+                  <span class="skill-rating">LVL 92 <span class="rating-sub">/ 100</span></span>
+                </div>
+                <div class="pixel-bar-track" aria-label="Semantic HTML proficiency 92%">
+                  <div class="pixel-bar-fill" style="--skill-pct: 92%;"></div>
+                </div>
+                <p class="skill-notes">Clean semantic hierarchy, ARIA accessibility attributes, and SEO optimization.</p>
+              </div>
+
+              <!-- Skill: Modern CSS3, Pixel Design & Responsive Systems -->
+              <div class="skill-item" data-level="90">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-icon">🎨</span> CSS3 &amp; Pixel Art Systems
+                  </span>
+                  <span class="skill-rating">LVL 90 <span class="rating-sub">/ 100</span></span>
+                </div>
+                <div class="pixel-bar-track" aria-label="CSS3 proficiency 90%">
+                  <div class="pixel-bar-fill" style="--skill-pct: 90%;"></div>
+                </div>
+                <p class="skill-notes">Flexbox, Grid, CSS custom properties, media queries, keyframe animations.</p>
+              </div>
+
+              <!-- Skill: RESTful APIs & Client-Server Architecture -->
+              <div class="skill-item" data-level="80">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-icon">🔌</span> REST APIs &amp; Networking
+                  </span>
+                  <span class="skill-rating">LVL 80 <span class="rating-sub">/ 100</span></span>
+                </div>
+                <div class="pixel-bar-track" aria-label="REST APIs proficiency 80%">
+                  <div class="pixel-bar-fill" style="--skill-pct: 80%;"></div>
+                </div>
+                <p class="skill-notes">HTTP protocol, JSON payload exchange, endpoints integration, and asynchronous Fetch.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===================================================== -->
+          <!-- CATEGORY 4: TOOLS, HARDWARE & DEVOPS                  -->
+          <!-- ===================================================== -->
+          <div class="skills-category-card" data-category="tools">
+            <div class="category-header">
+              <div class="category-title-wrap">
+                <span class="category-icon">🛠️</span>
+                <h3 class="category-title">Tools &amp; Hardware Prototyping</h3>
+              </div>
+              <span class="category-badge">3 ABILITIES</span>
+            </div>
+            <p class="category-desc">Developer workflow tooling, source code management, and IoT solar automation.</p>
+
+            <div class="skills-list">
+              <!-- Skill: Git & GitHub (Version control & collaboration) -->
+              <div class="skill-item" data-level="86">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-icon">🐙</span> Git &amp; GitHub
+                  </span>
+                  <span class="skill-rating">LVL 86 <span class="rating-sub">/ 100</span></span>
+                </div>
+                <div class="pixel-bar-track" aria-label="Git proficiency 86%">
+                  <div class="pixel-bar-fill" style="--skill-pct: 86%;"></div>
+                </div>
+                <p class="skill-notes">Repository branching, commits, pull requests, merge conflict resolution.</p>
+              </div>
+
+              <!-- Skill: IoT, Arduino & Solar Automation (Proven in irrigation project) -->
+              <div class="skill-item" data-level="82">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-icon">☀️</span> Solar Automation &amp; IoT
+                  </span>
+                  <span class="skill-rating">LVL 82 <span class="rating-sub">/ 100</span></span>
+                </div>
+                <div class="pixel-bar-track" aria-label="IoT automation proficiency 82%">
+                  <div class="pixel-bar-fill" style="--skill-pct: 82%;"></div>
+                </div>
+                <p class="skill-notes">Sensor calibration, solar controller integration, and automated irrigation circuits.</p>
+              </div>
+
+              <!-- Skill: Linux Shell & Development Environments -->
+              <div class="skill-item" data-level="78">
+                <div class="skill-info">
+                  <span class="skill-name">
+                    <span class="skill-icon">💻</span> Linux &amp; Shell Environments
+                  </span>
+                  <span class="skill-rating">LVL 78 <span class="rating-sub">/ 100</span></span>
+                </div>
+                <div class="pixel-bar-track" aria-label="Linux shell proficiency 78%">
+                  <div class="pixel-bar-fill" style="--skill-pct: 78%;"></div>
+                </div>
+                <p class="skill-notes">Terminal commands, process management, shell scripting, and VS Code workflows.</p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.skills-categories-grid -->
+
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- ======================================================= -->
+    <!-- 4. TIMELINE SECTION (Career & Education Milestones)     -->
+    <!-- ======================================================= -->
+    <section id="timeline" class="timeline-section" aria-label="Experience and Education Timeline">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">// QUEST LOG &amp; CHRONOLOGY //</span>
+          <h2 class="section-heading">Timeline &amp; Milestones</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <p class="timeline-intro">
+          A chronicle of academic milestones, major engineering projects, and technical breakthroughs.
+        </p>
+
+        <!-- Vertical Timeline Component with Rounded Cards -->
+        <div class="timeline-container">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Timeline Event 1: Education -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-icon">🎓</span>
+            </div>
+            <div class="timeline-card">
+              <div class="card-meta">
+                <span class="event-tag tag-education">EDUCATION</span>
+                <span class="event-date">2025 – 2029</span>
+              </div>
+              <h3 class="event-title">B.E. in Computer Science &amp; Data Science</h3>
+              <h4 class="event-organization">A.I.T. College • Chikkamagaluru, Karnataka</h4>
+              <p class="event-description">
+                Pursuing an engineering degree merging foundational computer systems, algorithmic problem solving, and modern data science. Developing core capabilities in OOP, algorithmic thinking, and analytical data modeling.
+              </p>
+              <div class="event-pills">
+                <span class="pill-item">Data Science</span>
+                <span class="pill-item">Object-Oriented Programming</span>
+                <span class="pill-item">Algorithms</span>
+                <span class="pill-item">Java &amp; Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Event 2: Major Project -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-icon">☀️</span>
+            </div>
+            <div class="timeline-card">
+              <div class="card-meta">
+                <span class="event-tag tag-project">MAJOR PROJECT</span>
+                <span class="event-date">2025</span>
+              </div>
+              <h3 class="event-title">Solar-Powered Automated Drip Irrigation</h3>
+              <h4 class="event-organization">Sustainable Agriculture &amp; Automation Project</h4>
+              <p class="event-description">
+                Designed and built an automated irrigation system integrating solar energy with soil monitoring sensors. Automated water delivery to crops while eliminating reliance on conventional fossil fuels and grid power.
+              </p>
+              <div class="event-pills">
+                <span class="pill-item">IoT Automation</span>
+                <span class="pill-item">Solar Energy</span>
+                <span class="pill-item">Sensor Calibration</span>
+                <span class="pill-item">Embedded Logic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Event 3: Career Milestone -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-icon">⚡</span>
+            </div>
+            <div class="timeline-card">
+              <div class="card-meta">
+                <span class="event-tag tag-milestone">CAREER MILESTONE</span>
+                <span class="event-date">2024 – 2025</span>
+              </div>
+              <h3 class="event-title">Algorithmic Mastery &amp; Programming Fundamentals</h3>
+              <h4 class="event-organization">Core Computer Science Specialization</h4>
+              <p class="event-description">
+                Deep dive into foundational programming languages including C, Java, and Python. Rigorous practice on memory management, pointer arithmetic, linked data structures, and algorithmic complexity (Big-O analysis).
+              </p>
+              <div class="event-pills">
+                <span class="pill-item">C Programming</span>
+                <span class="pill-item">Data Structures</span>
+                <span class="pill-item">Complexity Analysis</span>
+                <span class="pill-item">Problem Solving</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Event 4: Current Quest -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-icon">🚀</span>
+            </div>
+            <div class="timeline-card">
+              <div class="card-meta">
+                <span class="event-tag tag-current">CURRENT QUEST</span>
+                <span class="event-date">2026 – Present</span>
+              </div>
+              <h3 class="event-title">Full-Stack Web Engineering &amp; Data Architectures</h3>
+              <h4 class="event-organization">Continuous Learning &amp; Web Innovation</h4>
+              <p class="event-description">
+                Expanding into scalable full-stack web architectures, accessible UI systems with pixel precision, REST API integrations, and collaborative open-source developer tooling.
+              </p>
+              <div class="event-pills">
+                <span class="pill-item">Semantic Web</span>
+                <span class="pill-item">RESTful Services</span>
+                <span class="pill-item">Responsive Design</span>
+                <span class="pill-item">Modern Tooling</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.timeline-container -->
+
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 5. PROJECTS SECTION (Featured Works & Builds)           -->
+    <!-- ======================================================= -->
+    <section id="projects" class="projects-section" aria-label="Featured Projects">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">// COMPLETED QUESTS &amp; BUILDS //</span>
+          <h2 class="section-heading">Featured Projects</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <p class="projects-intro">
+          A showcase of engineering builds spanning sustainable IoT hardware, algorithmic visualizers, accessible web design systems, and predictive data pipelines. Click any thumbnail to inspect complete architectural specs.
+        </p>
+
+        <!-- Projects Grid Container -->
+        <div class="projects-grid">
+
+          <!-- ===================================================== -->
+          <!-- PROJECT 1: Solar-Powered Automated Drip Irrigation   -->
+          <!-- ===================================================== -->
+          <article class="project-card" data-project-id="solar">
+            <!-- 
+              THUMBNAIL CONNECTION COMMENT:
+              The button element below wraps the image thumbnail and possesses the 'data-project="solar"' attribute.
+              When clicked, JavaScript captures this identifier and pulls the corresponding detailed specifications 
+              (Problem, Architecture, Hardware Specs, Energy Metrics) into the accessible modal dialog.
+            -->
+            <div class="project-thumb-container">
+              <button 
+                type="button" 
+                class="project-thumb-trigger" 
+                data-project="solar"
+                aria-label="Inspect detailed specs for Solar-Powered Automated Drip Irrigation System"
+                title="Click to view detailed specs"
+              >
+                <img 
+                  src="project-solar.jpg" 
+                  alt="16-bit pixel art illustration of solar panels and automated drip irrigation in green field" 
+                  class="project-thumb-img"
+                  loading="lazy"
+                />
+                <span class="thumb-inspect-overlay" aria-hidden="true">
+                  <span class="inspect-pixel-badge">🔍 VIEW SPECS</span>
+                </span>
+              </button>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-type-tag tag-iot">HARDWARE &amp; IOT</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">Solar-Powered Automated Drip Irrigation</h3>
+              <p class="project-summary">
+                An eco-conscious agricultural automation system harnessing solar photovoltaics to regulate soil moisture and automate precision solenoid water delivery.
+              </p>
+              
+              <!-- Technologies Used -->
+              <div class="project-tech-pills">
+                <span class="tech-pill">Embedded C</span>
+                <span class="tech-pill">IoT Sensors</span>
+                <span class="tech-pill">Solar Energy</span>
+                <span class="tech-pill">Automation</span>
+              </div>
+
+              <!-- Card Action Links -->
+              <div class="project-actions">
+                <button type="button" class="pixel-btn pixel-btn-primary project-modal-open-btn" data-project="solar">
+                  <span>📜</span> SPECS
+                </button>
+                <a href="https://github.com/2007shreeniva" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-secondary" aria-label="View source code on GitHub for Solar Irrigation">
+                  <span>🐙</span> CODE
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===================================================== -->
+          <!-- PROJECT 2: Graph Theory & Sorting Algorithm Visualizer -->
+          <!-- ===================================================== -->
+          <article class="project-card" data-project-id="algo">
+            <!-- 
+              THUMBNAIL CONNECTION COMMENT:
+              'data-project="algo"' connects this thumbnail directly to the Algorithm Visualizer detailed view,
+              demonstrating graph traversals (BFS, DFS, Dijkstra) and sorting asymptotic performance metrics.
+            -->
+            <div class="project-thumb-container">
+              <button 
+                type="button" 
+                class="project-thumb-trigger" 
+                data-project="algo"
+                aria-label="Inspect detailed specs for Graph & Sorting Algorithm Visualizer"
+                title="Click to view detailed specs"
+              >
+                <img 
+                  src="project-algo.jpg" 
+                  alt="Pixel art arcade monitor displaying network graph nodes and colorful sorting bars" 
+                  class="project-thumb-img"
+                  loading="lazy"
+                />
+                <span class="thumb-inspect-overlay" aria-hidden="true">
+                  <span class="inspect-pixel-badge">🔍 VIEW SPECS</span>
+                </span>
+              </button>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-type-tag tag-cs">ALGORITHMS &amp; DATA STRUCTURES</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">Graph &amp; Sorting Algorithm Visualizer</h3>
+              <p class="project-summary">
+                Interactive real-time algorithmic simulator visualizing graph traversal paths (BFS/DFS, Dijkstra) and side-by-side sorting complexities on a retro arcade canvas.
+              </p>
+
+              <div class="project-tech-pills">
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">OOP Architecture</span>
+                <span class="tech-pill">HTML5 Canvas</span>
+                <span class="tech-pill">Big-O Analytics</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="pixel-btn pixel-btn-primary project-modal-open-btn" data-project="algo">
+                  <span>📜</span> SPECS
+                </button>
+                <a href="https://github.com/2007shreeniva" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-secondary" aria-label="View source code on GitHub for Algorithm Visualizer">
+                  <span>🐙</span> CODE
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===================================================== -->
+          <!-- PROJECT 3: Retro 16-Bit Cyber Web Portfolio           -->
+          <!-- ===================================================== -->
+          <article class="project-card" data-project-id="portfolio">
+            <!-- 
+              THUMBNAIL CONNECTION COMMENT:
+              'data-project="portfolio"' connects this thumbnail to the detailed breakdown of this very web portfolio,
+              including its zero-dependency vanilla architecture, CSS media query night mode engine, and WCAG accessibility.
+            -->
+            <div class="project-thumb-container">
+              <button 
+                type="button" 
+                class="project-thumb-trigger" 
+                data-project="portfolio"
+                aria-label="Inspect detailed specs for Retro 16-Bit Cyber Web Portfolio"
+                title="Click to view detailed specs"
+              >
+                <img 
+                  src="project-portfolio.jpg" 
+                  alt="Pixel art developer workstation with multiple CRT monitors displaying code" 
+                  class="project-thumb-img"
+                  loading="lazy"
+                />
+                <span class="thumb-inspect-overlay" aria-hidden="true">
+                  <span class="inspect-pixel-badge">🔍 VIEW SPECS</span>
+                </span>
+              </button>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-type-tag tag-web">WEB ARCHITECTURE</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Retro 16-Bit Cyber Web Portfolio</h3>
+              <p class="project-summary">
+                A handcrafted personal website combining a nostalgic 16-bit arcade design system with modern accessible standards, browser theme detection, and lightning-fast zero-framework loading.
+              </p>
+
+              <div class="project-tech-pills">
+                <span class="tech-pill">Semantic HTML5</span>
+                <span class="tech-pill">Vanilla CSS3</span>
+                <span class="tech-pill">JavaScript ES6+</span>
+                <span class="tech-pill">WCAG 2.1</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="pixel-btn pixel-btn-primary project-modal-open-btn" data-project="portfolio">
+                  <span>📜</span> SPECS
+                </button>
+                <a href="#hero" class="pixel-btn pixel-btn-secondary" aria-label="Explore live portfolio demo">
+                  <span>🎮</span> LIVE
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===================================================== -->
+          <!-- PROJECT 4: Predictive Data Modeling & ML Analytics   -->
+          <!-- ===================================================== -->
+          <article class="project-card" data-project-id="data">
+            <!-- 
+              THUMBNAIL CONNECTION COMMENT:
+              'data-project="data"' links this thumbnail to the Data Analytics console specs,
+              detailing statistical pipelines, data cleaning routines, feature correlation matrices, and model evaluations.
+            -->
+            <div class="project-thumb-container">
+              <button 
+                type="button" 
+                class="project-thumb-trigger" 
+                data-project="data"
+                aria-label="Inspect detailed specs for Predictive Data Modeling and Analytics Console"
+                title="Click to view detailed specs"
+              >
+                <img 
+                  src="project-data.jpg" 
+                  alt="Pixel art retro computer console showing machine learning neural diagrams and statistical charts" 
+                  class="project-thumb-img"
+                  loading="lazy"
+                />
+                <span class="thumb-inspect-overlay" aria-hidden="true">
+                  <span class="inspect-pixel-badge">🔍 VIEW SPECS</span>
+                </span>
+              </button>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-type-tag tag-data">DATA SCIENCE &amp; ML</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">Predictive Data Modeling &amp; ML Console</h3>
+              <p class="project-summary">
+                An exploratory data science pipeline analyzing multivariate datasets, training classification algorithms, and visualizing correlation heatmaps and loss convergence curves.
+              </p>
+
+              <div class="project-tech-pills">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Pandas &amp; NumPy</span>
+                <span class="tech-pill">Scikit-Learn</span>
+                <span class="tech-pill">EDA Analytics</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="pixel-btn pixel-btn-primary project-modal-open-btn" data-project="data">
+                  <span>📜</span> SPECS
+                </button>
+                <a href="https://github.com/2007shreeniva" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-secondary" aria-label="View source code on GitHub for Data Modeling Console">
+                  <span>🐙</span> CODE
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.projects-grid -->
+
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- ACCESSIBLE PROJECT DETAIL MODAL DIALOG                  -->
+    <!-- ======================================================= -->
+    <div id="project-modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="pixel-modal-box">
+        <!-- Modal Window Top Bar -->
+        <div class="modal-topbar">
+          <div class="modal-topbar-title">
+            <span class="terminal-prompt">&gt;</span>
+            <span id="modal-window-id">PROJECT_SPEC_VIEWER.EXE</span>
+          </div>
+          <button id="modal-close-btn" class="modal-close-btn" type="button" aria-label="Close project specifications dialog">
+            [✖ CLOSE]
+          </button>
+        </div>
+
+        <!-- Modal Dynamic Content Container -->
+        <div class="modal-content-scroll">
+          <div class="modal-hero-frame">
+            <img id="modal-image" src="project-solar.jpg" alt="Project preview screenshot" class="modal-hero-img" />
+          </div>
+
+          <div class="modal-header-info">
+            <div class="modal-tags-row">
+              <span id="modal-category" class="project-type-tag">HARDWARE &amp; IOT</span>
+              <span id="modal-year" class="project-year">2025</span>
+            </div>
+            <h3 id="modal-title" class="modal-title">Project Title</h3>
+            <p id="modal-tagline" class="modal-tagline">Brief tagline description.</p>
+          </div>
+
+          <div class="modal-body-grid">
+            <div class="modal-spec-card">
+              <h4 class="spec-heading"><span>⚡</span> PROBLEM STATEMENT</h4>
+              <p id="modal-problem" class="spec-body-text">Description of the problem solved.</p>
+            </div>
+
+            <div class="modal-spec-card">
+              <h4 class="spec-heading"><span>🛠️</span> ARCHITECTURE &amp; APPROACH</h4>
+              <p id="modal-solution" class="spec-body-text">Engineering implementation details.</p>
+            </div>
+
+            <div class="modal-spec-card">
+              <h4 class="spec-heading"><span>📊</span> KEY RESULTS &amp; METRICS</h4>
+              <p id="modal-metrics" class="spec-body-text">Quantifiable achievements and impacts.</p>
+            </div>
+          </div>
+
+          <!-- Technologies in Modal -->
+          <div class="modal-tech-section">
+            <h4 class="spec-heading"><span>🧩</span> TECH STACK ARSENAL</h4>
+            <div id="modal-tech-pills" class="project-tech-pills">
+              <!-- Dynamically populated pills -->
+            </div>
+          </div>
+
+          <!-- Action Buttons in Modal -->
+          <div class="modal-footer-actions">
+            <a id="modal-repo-link" href="https://github.com/2007shreeniva" target="_blank" rel="noopener noreferrer" class="pixel-btn pixel-btn-primary">
+              <span>🐙</span> VIEW GITHUB REPOSITORY
+            </a>
+            <button id="modal-dismiss-btn" type="button" class="pixel-btn pixel-btn-secondary">
+              <span>⬅️</span> BACK TO PORTFOLIO
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================= -->
+    <!-- 6. VIDEO HIGHLIGHT SECTION                              -->
+    <!-- ======================================================= -->
+    <section id="video" class="video-section" aria-label="Portfolio Video Introduction">
+      <div class="section-container">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">// DEVELOPER BROADCAST //</span>
+          <h2 class="section-heading">Portfolio Highlight</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <p class="video-intro">
+          A candid self-introduction walkthrough — meet the engineer behind the code, discover what drives the pixel-perfect builds, and get a personal tour of key engineering projects.
+        </p>
+
+        <!-- Responsive Video Container with Pixel Art Frame -->
+        <div class="video-frame-wrapper">
+          <!-- Pixel CRT Top Bar -->
+          <div class="video-frame-topbar">
+            <span class="video-frame-dot red-dot" aria-hidden="true"></span>
+            <span class="video-frame-dot yellow-dot" aria-hidden="true"></span>
+            <span class="video-frame-dot green-dot" aria-hidden="true"></span>
+            <span class="video-topbar-label">SRINIVAS_DN_INTRO.MP4 ▶ PLAYING</span>
+          </div>
+
+          <!-- 
+            VIDEO EMBED: Local self-introduction video file (self intro.mp4).
+            Uses CSS aspect-ratio (16/9) for fully responsive layout.
+            The <video> element supports native browser controls with 
+            preload="metadata" for fast initial page load.
+            The pixel-video-player class applies the retro border frame.
+          -->
+          <div class="video-aspect-container">
+            <video
+              id="portfolio-intro-video"
+              class="pixel-video-player"
+              controls
+              preload="metadata"
+              aria-label="Srinivas D N self-introduction and portfolio walkthrough video"
+            >
+              <source src="self intro.mp4" type="video/mp4" />
+              <!-- Fallback message for browsers without video support -->
+              <p class="video-fallback-msg">
+                Your browser does not support HTML5 video. 
+                <a href="self intro.mp4" download>Download the video</a> to watch it.
+              </p>
+            </video>
+          </div>
+
+          <!-- Pixel CRT Bottom Bar / Caption -->
+          <div class="video-frame-bottombar">
+            <span class="video-caption-icon" aria-hidden="true">📺</span>
+            <p class="video-caption-text">
+              <strong>DEVELOPER BROADCAST:</strong> Self-introduction &amp; project walkthrough — Srinivas D N, Software Engineer &amp; CS undergraduate at A.I.T. Karnataka.
+            </p>
+          </div>
+        </div>
+
+        <!-- CTA after video -->
+        <div class="video-cta-row">
+          <a href="#projects" class="pixel-btn pixel-btn-primary">
+            <span>🕹️</span> EXPLORE PROJECTS
+          </a>
+          <a href="#contact" class="pixel-btn pixel-btn-secondary">
+            <span>💬</span> LET'S CONNECT
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 7. TESTIMONIALS SECTION                                 -->
+    <!-- ======================================================= -->
+    <section id="testimonials" class="testimonials-section" aria-label="Testimonials and Endorsements">
+      <div class="section-container">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">// PARTY ENDORSEMENTS //</span>
+          <h2 class="section-heading">Testimonials</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <p class="testimonials-intro">
+          Words from collaborators, professors, and fellow builders who've witnessed the code in action.
+        </p>
+
+        <!-- Testimonials Grid: 8-bit Speech Bubble Cards -->
+        <div class="testimonials-grid">
+
+          <!-- Testimonial 1 -->
+          <article class="testimonial-card" aria-label="Testimonial from Prof. Ramesh K">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              <p>"Srinivas demonstrates an exceptional grasp of algorithmic fundamentals and consistently produces clean, well-documented solutions. His solar irrigation project was one of the most innovative submissions in the lab."</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar-box" aria-hidden="true">PK</div>
+              <div class="testimonial-author-info">
+                <strong class="author-name">Prof. Ramesh K</strong>
+                <span class="author-role">CS Department, A.I.T. Karnataka</span>
+              </div>
+            </div>
+            <div class="testimonial-badge">
+              <span class="pill-item">EDUCATOR</span>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="testimonial-card" aria-label="Testimonial from Arjun Sharma">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              <p>"Collaborating with Srinivas on group projects was seamless — he leads with logic and lifts the entire team. His attention to code quality and willingness to mentor others makes him a standout developer."</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar-box" aria-hidden="true">AS</div>
+              <div class="testimonial-author-info">
+                <strong class="author-name">Arjun Sharma</strong>
+                <span class="author-role">Fellow CS Student &amp; Collaborator</span>
+              </div>
+            </div>
+            <div class="testimonial-badge">
+              <span class="pill-item">PEER</span>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="testimonial-card" aria-label="Testimonial from Meena Rao">
+            <div class="testimonial-stars" aria-label="4 out of 5 stars">
+              <span aria-hidden="true">★★★★☆</span>
+            </div>
+            <blockquote class="testimonial-quote">
+              <p>"His pixel-art portfolio is a testament to his creativity. Srinivas blends engineering depth with aesthetic design sensibility — rare and genuinely impressive for someone this early in their career."</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar-box" aria-hidden="true">MR</div>
+              <div class="testimonial-author-info">
+                <strong class="author-name">Meena Rao</strong>
+                <span class="author-role">UI/UX Mentor &amp; Tech Community Lead</span>
+              </div>
+            </div>
+            <div class="testimonial-badge">
+              <span class="pill-item">MENTOR</span>
+            </div>
+          </article>
+
+        </div><!-- /.testimonials-grid -->
+
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 8. AI CHAT SECTION                                      -->
+    <!-- ======================================================= -->
+    <section id="chat" class="chat-section" aria-label="Chat with AI Srinivas">
+      <div class="section-container">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">// AI.SRINIVAS_DN.EXE //</span>
+          <h2 class="section-heading">Chat with AI Srinivas</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <p class="chat-intro">
+          Talk to an AI version of me! Ask about my skills, projects, experience, or anything else. Powered by a smart local knowledge base — with a comment showing exactly where to plug in the OpenAI API.
+        </p>
+
+        <!-- ============================================================ -->
+        <!-- MAIN AI CHAT WINDOW                                          -->
+        <!-- ============================================================ -->
+        <div class="ai-chat-window" role="region" aria-label="AI Chat with Srinivas">
+
+          <!-- Chat Window Header: AI Avatar + Status -->
+          <div class="ai-chat-header">
+            <div class="ai-avatar-wrap">
+              <div class="ai-avatar-pixel" aria-hidden="true">
+                <!-- Pixel grid avatar (CSS-drawn) -->
+                <span class="ai-avatar-glyph">🤖</span>
+              </div>
+              <div class="ai-status-ring" aria-hidden="true"></div>
+            </div>
+            <div class="ai-header-info">
+              <span class="ai-name">SRINIVAS.AI</span>
+              <span class="ai-status-text">
+                <span class="ai-status-dot" aria-hidden="true"></span>
+                Online — responding instantly
+              </span>
+            </div>
+            <div class="ai-header-badges">
+              <span class="ai-badge">BETA v1.0</span>
+              <!-- Badge shown when OpenAI key is plugged in -->
+              <span class="ai-badge ai-badge-sim" id="ai-mode-badge">SIM MODE</span>
+            </div>
+            <!-- Clear conversation button -->
+            <button
+              id="ai-clear-btn"
+              type="button"
+              class="ai-clear-btn"
+              aria-label="Clear conversation"
+              title="Clear conversation"
+            >
+              🗑 CLEAR
+            </button>
+          </div>
+
+          <!-- ============================================================ -->
+          <!-- MESSAGES DISPLAY AREA                                        -->
+          <!-- ============================================================ -->
+          <div
+            class="ai-messages-panel"
+            id="ai-messages"
+            role="log"
+            aria-live="polite"
+            aria-label="Conversation messages"
+          >
+            <!-- Initial greeting message from AI (rendered by JS on boot) -->
+          </div>
+
+          <!-- ============================================================ -->
+          <!-- QUICK QUESTION CHIPS                                         -->
+          <!-- ============================================================ -->
+          <div class="ai-suggestions" id="ai-suggestions" aria-label="Suggested questions">
+            <span class="ai-suggestions-label">Try asking:</span>
+            <div class="ai-chips-row">
+              <button type="button" class="ai-chip" data-query="What are your skills?">⚡ Skills</button>
+              <button type="button" class="ai-chip" data-query="Tell me about your projects">🕹️ Projects</button>
+              <button type="button" class="ai-chip" data-query="What is your educational background?">🎓 Education</button>
+              <button type="button" class="ai-chip" data-query="Are you open to internships?">💼 Hire me?</button>
+              <button type="button" class="ai-chip" data-query="What is your favourite programming language?">❤️ Fav Lang</button>
+              <button type="button" class="ai-chip" data-query="Tell me about yourself">👾 About</button>
+            </div>
+          </div>
+
+          <!-- ============================================================ -->
+          <!-- INPUT ROW                                                    -->
+          <!-- ============================================================ -->
+          <div class="ai-input-row">
+            <label for="ai-chat-input" class="ai-prompt-label" aria-label="Message prompt">&gt;_</label>
+            <input
+              id="ai-chat-input"
+              type="text"
+              class="ai-input-field"
+              placeholder="Ask me anything about Srinivas..."
+              maxlength="400"
+              autocomplete="off"
+              aria-label="Type your question for AI Srinivas"
+            />
+            <button
+              id="ai-send-btn"
+              type="button"
+              class="pixel-btn pixel-btn-primary ai-send-btn"
+              aria-label="Send message to AI"
+            >
+              <span aria-hidden="true">▶</span> SEND
+            </button>
+          </div>
+
+          <!-- API integration note -->
+          <p class="ai-api-note">
+            💡 <strong>Developers:</strong> Currently running on a local knowledge base. 
+            See <code>script.js → callAI()</code> to connect the OpenAI API.
+          </p>
+
+        </div><!-- /.ai-chat-window -->
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================= -->
+    <!-- 9. CONTACT SECTION                                      -->
+    <!-- ======================================================= -->
+    <section id="contact" class="contact-section" aria-label="Contact">
+      <div class="section-container">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag">// SEND A SIGNAL //</span>
+          <h2 class="section-heading">Get In Touch</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <p class="contact-intro">
+          Whether it's a project collaboration, internship inquiry, or just a friendly ping — I'm always ready to receive your transmission.
+        </p>
+
+        <div class="contact-grid">
+
+          <!-- Left: Contact Form -->
+          <div class="contact-form-panel">
+            <div class="contact-form-card">
+              <h3 class="contact-subheading">
+                <span class="subheading-icon">📡</span> SEND TRANSMISSION
+              </h3>
+              <form id="contact-form" class="pixel-form" novalidate aria-label="Contact form">
+
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">PLAYER NAME</label>
+                  <input
+                    id="contact-name"
+                    type="text"
+                    name="name"
+                    class="pixel-input"
+                    placeholder="Your full name..."
+                    autocomplete="name"
+                    required
+                    aria-required="true"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">EMAIL ADDRESS</label>
+                  <input
+                    id="contact-email"
+                    type="email"
+                    name="email"
+                    class="pixel-input"
+                    placeholder="your@email.com"
+                    autocomplete="email"
+                    required
+                    aria-required="true"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">MISSION TYPE</label>
+                  <select id="contact-subject" name="subject" class="pixel-input pixel-select">
+                    <option value="">-- Select a subject --</option>
+                    <option value="collaboration">Project Collaboration</option>
+                    <option value="internship">Internship Opportunity</option>
+                    <option value="freelance">Freelance Work</option>
+                    <option value="feedback">Portfolio Feedback</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">MESSAGE PAYLOAD</label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    class="pixel-input pixel-textarea"
+                    placeholder="Describe your quest..."
+                    rows="5"
+                    maxlength="1000"
+                    required
+                    aria-required="true"
+                  ></textarea>
+                </div>
+
+                <button type="submit" id="contact-submit-btn" class="pixel-btn pixel-btn-primary contact-submit-btn">
+                  <span>📡</span> TRANSMIT MESSAGE
+                </button>
+
+                <!-- Form Status Message -->
+                <div id="contact-form-status" class="form-status" role="status" aria-live="polite" hidden></div>
+
+              </form>
+            </div>
+          </div>
+
+          <!-- Right: Contact Info & Social Links -->
+          <div class="contact-info-panel">
+
+            <!-- Direct Contact Info -->
+            <div class="contact-card info-card">
+              <h3 class="contact-subheading">
+                <span class="subheading-icon">📋</span> DIRECT CHANNELS
+              </h3>
+              <ul class="contact-info-list">
+                <li class="contact-info-item">
+                  <span class="contact-info-icon" aria-hidden="true">📧</span>
+                  <div>
+                    <span class="contact-info-label">EMAIL</span>
+                    <a href="mailto:srinivas2007dn@gmail.com" class="contact-info-value contact-link">
+                      srinivas2007dn@gmail.com
+                    </a>
+                  </div>
+                </li>
+                <li class="contact-info-item">
+                  <span class="contact-info-icon" aria-hidden="true">📍</span>
+                  <div>
+                    <span class="contact-info-label">LOCATION</span>
+                    <span class="contact-info-value">Chikkamagaluru, Karnataka, India</span>
+                  </div>
+                </li>
+                <li class="contact-info-item">
+                  <span class="contact-info-icon" aria-hidden="true">🎓</span>
+                  <div>
+                    <span class="contact-info-label">INSTITUTION</span>
+                    <span class="contact-info-value">A.I.T. College, Karnataka</span>
+                  </div>
+                </li>
+                <li class="contact-info-item">
+                  <span class="contact-info-icon" aria-hidden="true">🟢</span>
+                  <div>
+                    <span class="contact-info-label">STATUS</span>
+                    <span class="contact-info-value highlight-green">Open to Opportunities</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Social / Professional Links -->
+            <div class="contact-card social-card">
+              <h3 class="contact-subheading">
+                <span class="subheading-icon">🌐</span> SOCIAL PROFILES
+              </h3>
+              <div class="social-links-grid">
+                <a
+                  href="https://github.com/2007shreeniva"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link-btn github-btn"
+                  aria-label="Visit Srinivas D N's GitHub profile"
+                >
+                  <span class="social-icon" aria-hidden="true">🐙</span>
+                  <span class="social-name">GitHub</span>
+                  <span class="social-sub">2007shreeniva</span>
+                </a>
+                <a
+                  href="https://linkedin.com/in/srinivas-dn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link-btn linkedin-btn"
+                  aria-label="Visit Srinivas D N's LinkedIn profile"
+                >
+                  <span class="social-icon" aria-hidden="true">💼</span>
+                  <span class="social-name">LinkedIn</span>
+                  <span class="social-sub">Connect Professionally</span>
+                </a>
+                <a
+                  href="Srinivas D N_resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link-btn resume-btn"
+                  aria-label="Download Srinivas D N's resume PDF"
+                >
+                  <span class="social-icon" aria-hidden="true">📄</span>
+                  <span class="social-name">Resume</span>
+                  <span class="social-sub">Download PDF</span>
+                </a>
+              </div>
+            </div>
+
+          </div><!-- /.contact-info-panel -->
+
+        </div><!-- /.contact-grid -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- FOOTER                                                    -->
+  <!-- ========================================================= -->
+  <footer id="footer" class="site-footer" role="contentinfo">
+    <div class="footer-container">
+
+      <!-- ── Pixel art decorative top border ── -->
+      <div class="footer-pixel-border" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <!-- ── Top row: Brand + Nav + Social Icons ── -->
+      <div class="footer-top">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo-link" aria-label="Scroll to top — Srinivas D N Portfolio">
+            <span class="footer-logo" aria-hidden="true">&lt;DEV&gt;</span>
+          </a>
+          <span class="footer-tagline">Srinivas D N — Software Engineer</span>
+          <span class="footer-location">
+            <svg class="footer-loc-icon" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" width="12" height="12">
+              <path d="M8 0a5 5 0 0 0-5 5c0 4 5 11 5 11s5-7 5-11a5 5 0 0 0-5-5zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+            </svg>
+            Chikkamagaluru, Karnataka, India
+          </span>
+        </div>
+
+        <!-- Footer Nav Links -->
+        <nav class="footer-nav" aria-label="Footer site navigation">
+          <a href="#hero"         class="footer-link">Home</a>
+          <a href="#about"        class="footer-link">About</a>
+          <a href="#skills"       class="footer-link">Skills</a>
+          <a href="#timeline"     class="footer-link">Timeline</a>
+          <a href="#projects"     class="footer-link">Projects</a>
+          <a href="#video"        class="footer-link">Video</a>
+          <a href="#chat"         class="footer-link">AI Chat</a>
+          <a href="#contact"      class="footer-link">Contact</a>
+        </nav>
+
+        <!-- ─────────────────────────────────────────────────── -->
+        <!-- PIXEL ART SOCIAL ICONS                             -->
+        <!-- Each icon: SVG + pixel border + tooltip + aria     -->
+        <!-- ─────────────────────────────────────────────────── -->
+        <div class="footer-social-icons" role="list" aria-label="Social media profiles">
+
+          <!-- GitHub -->
+          <a
+            href="https://github.com/2007shreeniva"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-icon footer-icon-github"
+            role="listitem"
+            aria-label="Visit Srinivas D N on GitHub — @2007shreeniva (opens in new tab)"
+            data-tooltip="GitHub"
+          >
+            <span class="footer-icon-inner" aria-hidden="true">
+              <!-- GitHub SVG mark (pixel-rendered via image-rendering) -->
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" focusable="false">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              </svg>
+            </span>
+            <span class="footer-icon-tooltip" aria-hidden="true">GitHub</span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://linkedin.com/in/srinivas-dn"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-icon footer-icon-linkedin"
+            role="listitem"
+            aria-label="Connect with Srinivas D N on LinkedIn (opens in new tab)"
+            data-tooltip="LinkedIn"
+          >
+            <span class="footer-icon-inner" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" focusable="false">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </span>
+            <span class="footer-icon-tooltip" aria-hidden="true">LinkedIn</span>
+          </a>
+
+          <!-- Email -->
+          <a
+            href="mailto:srinivas2007dn@gmail.com"
+            class="footer-social-icon footer-icon-email"
+            role="listitem"
+            aria-label="Send an email to Srinivas D N at srinivas2007dn@gmail.com"
+            data-tooltip="Email"
+          >
+            <span class="footer-icon-inner" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" focusable="false">
+                <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </span>
+            <span class="footer-icon-tooltip" aria-hidden="true">Email</span>
+          </a>
+
+          <!-- Twitter / X -->
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-icon footer-icon-twitter"
+            role="listitem"
+            aria-label="Follow Srinivas D N on X (Twitter) (opens in new tab)"
+            data-tooltip="Twitter / X"
+          >
+            <span class="footer-icon-inner" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" focusable="false">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L2.166 2.25H8.08l4.263 5.633L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/>
+              </svg>
+            </span>
+            <span class="footer-icon-tooltip" aria-hidden="true">Twitter / X</span>
+          </a>
+
+          <!-- Resume Download -->
+          <a
+            href="Srinivas D N_resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-icon footer-icon-resume"
+            role="listitem"
+            aria-label="Download Srinivas D N's resume as a PDF (opens in new tab)"
+            data-tooltip="Resume PDF"
+          >
+            <span class="footer-icon-inner" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" focusable="false">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zm-2 8H7v-2h4v2zm4-4H7v-2h8v2zm0-4H7V7h8v2z"/>
+              </svg>
+            </span>
+            <span class="footer-icon-tooltip" aria-hidden="true">Resume PDF</span>
+          </a>
+
+        </div><!-- /.footer-social-icons -->
+      </div><!-- /.footer-top -->
+
+      <!-- ── Status bar ── -->
+      <div class="footer-status-bar" aria-label="Developer status">
+        <span class="footer-status-item">
+          <span class="footer-status-dot green" aria-hidden="true"></span>
+          <span>Available for opportunities</span>
+        </span>
+        <span class="footer-status-sep" aria-hidden="true">|</span>
+        <span class="footer-status-item">
+          <span class="footer-status-dot purple" aria-hidden="true"></span>
+          <span>Open to collaborations</span>
+        </span>
+        <span class="footer-status-sep" aria-hidden="true">|</span>
+        <span class="footer-status-item">
+          <span class="footer-status-dot cyan" aria-hidden="true"></span>
+          <span>B.E. CS &amp; Data Science · A.I.T. Karnataka</span>
+        </span>
+      </div>
+
+      <!-- ── Bottom row: copyright + back-to-top ── -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="current-year">2026</span> Srinivas D N.
+          <span class="footer-copy-sub">Crafted with pixel precision &amp; ☕ Java.</span>
+        </p>
+        <div class="footer-bottom-right">
+          <span class="footer-tech-badge" aria-label="Built with HTML5">HTML5</span>
+          <span class="footer-tech-badge" aria-label="Styled with CSS3">CSS3</span>
+          <span class="footer-tech-badge" aria-label="Scripted with JavaScript">JS</span>
+          <a href="#hero" class="back-to-top pixel-btn pixel-btn-secondary" aria-label="Scroll back to top of page">↑ TOP</a>
+        </div>
+      </div>
+
+    </div><!-- /.footer-container -->
+  </footer>
+
+  </div><!-- /.main-wrapper -->
+
+  <!-- External JavaScript for Night Mode Toggle & Interactivity -->
+  <script src="script.js"></script>
+</body>
+</html>
